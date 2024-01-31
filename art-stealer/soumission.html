@@ -1,0 +1,68 @@
+<div id="center">
+    <div id="grand-bleu"class="semi-cercle-grand"></div>
+    <div id="grand-vert" class="semi-cercle-grand"></div>
+    <div id="grand" class="cercle-milieu"></div>
+    <div id="petit-vert" class="semi-cercle-petit"></div>
+    <div id="petit-bleu" class="semi-cercle-petit"></div>
+    <div id="petit" class="cercle-milieu"></div>
+  </div>
+  <style>
+    .semi-cercle-grand{
+      position:absolute;
+      width: 125px;
+      height: 250px;
+      overflow:hidden;
+      background-color:#80CDF6;
+      border-radius: 0 125px 125px 0;
+    }
+    .semi-cercle-petit{
+      position:absolute;
+      width: 75px;
+      height: 150px;
+      overflow:hidden;
+      background-color:#80CDF6;
+      border-radius: 0 75px 75px 0;
+    }
+    
+    .cercle-milieu {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 200px;
+        background-color: #0D2328;
+        border-radius: 50%;
+    }
+    #petit{
+      height:100px;
+      width:100px;
+    }
+    #center{
+        width:100%;
+        height:100%;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+    #grand-vert{
+      transform: rotate(180deg);
+      background-color:#23A440;
+      right:50%
+    }
+    #grand-bleu{
+      background-color:#80CDF6;
+      left:50%
+    }
+    #petit-bleu{
+      transform: rotate(180deg);
+      background-color:#80CDF6;
+      right:50%
+    }
+    #petit-vert{
+      background-color:#23A440;
+      left:50%
+    }
+    body{
+      background-color:#0D2328;
+    }
+  </style>

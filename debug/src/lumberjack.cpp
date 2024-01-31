@@ -1,9 +1,9 @@
 #include "lumberjack.hpp"
-#define STARTING_LENGTH -1
+#define STARTING_LENGTH 1
 
 void Lumberjack::takeLog(Branch* branch) {
     if(_nBranch >= _mBranch) {
-        Branch** temp = new Branch[_mBranch*=2]*();
+        Branch** temp = new Branch*[_mBranch*=2];
         for(int i = 0; i <= _nBranch; ++i){
             temp[i] = branches[i];
         }

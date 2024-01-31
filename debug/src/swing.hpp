@@ -9,9 +9,12 @@ public:
     float calculateHeight();
     Swing(int id, Type type, float rope);
     ~Swing() = default;
+    int& getHorizontalPos(){
+        return _horizontalPos;
+    }
+    void update(int = 1);
 
 private:
-    void update(int = 1);
     Type _type;
     float _ropeLength;
     int _id;

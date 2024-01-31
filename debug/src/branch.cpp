@@ -5,7 +5,7 @@ int Branch::getLength() {
 
 void Branch::setSwing(Swing swing) {
     mySwing = &swing;
-    mySwing->_horizontalPos = 0;
+    mySwing->getHorizontalPos() = 0;
 }
 
 Swing* Branch::getSwing() {

@@ -1,0 +1,10 @@
+Question 1
+
+SELECT DISTINCT A.nom
+FROM Animaux A
+JOIN Predateur P ON A.nom = P.PrédateurID
+JOIN Animaux PA ON P.ProieID = PA.AnimalID
+JOIN Plante PA2 ON PA.environnements = PA2.environnements
+WHERE PA2.nom = X;
+
+incomplet pas eu le temp de finir

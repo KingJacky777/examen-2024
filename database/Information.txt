@@ -1,0 +1,5 @@
+jai fais le database sur SQLQuery1 de microsoft 
+alors je savais pas trop comment le remettre.
+jai ainsi drop un photo du diagramme et le code sera en format texte 
+
+dsl d'avance

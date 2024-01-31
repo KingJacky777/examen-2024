@@ -7,9 +7,9 @@ class Branch {
         int getId();
         Branch(int id=0, int length=2);
         ~Branch();
+        void grow();
     private:
         Swing* mySwing = nullptr;
         int _id;
         int _length;
-        void grow();
 };

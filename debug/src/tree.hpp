@@ -5,7 +5,7 @@
 #include "swing.hpp"
 #include "branch.hpp"
 #include <string>
-#define DEFAULT_MAX_BRANCHES = 12
+#define DEFAULT_MAX_BRANCHES 12;
 class Visitor;
 class Tree
 {
@@ -22,9 +22,9 @@ public:
     std::string getName();
     void acceptVisitor(Visitor *visitor);
     void pushSwing(int duration = 1);
+    void grow();
 
 private:
-    void grow();
     std::string _name;
     Branch **_branches;
     int _nBranches = 0;
